@@ -5,9 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael's World</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .project-container{
+            margin-top:50px;
+            display:flex;
+            flex-wrap:wrap;
+            gap:24px;
+            justify-content:center;
+        }
+        .project-card{
+            background:rgba(255,255,255,0.12);
+            backdrop-filter: blur(8px);
+            padding:32px;
+            border-radius:16px;
+            width:320px;
+        }
+        .project-card h2{
+            margin-bottom:20px;
+            font-size:1.4rem;
+        }
+        .nav-row{
+            margin-top:40px;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to Michael's world</h1>
-    <a href="about-me.html">About Me</a>
+    <div class="nav-row">
+        <a href="about-me.html" style="margin:0 12px;">About Me</a>
+    </div>
+
+    <div class="project-container">
+        <div class="project-card">
+            <h2>Project 1: Adaptive Lower Limb Exoskeleton Assistive Device</h2>
+            <a href="project1.html">View Project</a>
+        </div>
+        <div class="project-card">
+            <h2>Project 2: Tremor Suppression Feeding Stabilizer for Parkinson’s Patients</h2>
+            <a href="project2.html">View Project</a>
+        </div>
+        <div class="project-card">
+            <h2>Project 3: Reserved For Future Project</h2>
+            <a href="project3.html">View Project</a>
+        </div>
+    </div>
 </body>
 </html>
